@@ -1,36 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title></title>
-    <meta charset="utf-8">
-    <link rel = "stylesheet" href = "css/styles.css">
-  </head>
-  <body>
-    <header>
-    </header>
+<html>
+<head>
+<link rel="stylesheet" href="css/styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Icon Library-->
+<link rel = "stylesheet" href = "https://cdnjs.cloudflare.come/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bitter&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--Navigation Bar -->
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="about.html">About Me</a>
+  <a href="career.html">Career</a>
+  <a href="work.html">Work</a>
+  <a href="contact.html">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
-    <nav>
-      <ul>
-        <li><a href = "index.html">HOME</a><li>
-        <li><a href = "about.html">ABOUT_ME</a></li>
-        <li><a href = "career.html">CAREER</a></li>
-        <li><a href = "work.html">WORK_HISTORY</a></li>
-        <li><a href = "contact.html">CONTACT</a></li>
-      </ul>
-    </nav>
-      <main>
-        <h1><u>About Me</u><h1>
-        <br>
-        <img src = "graduation.jpg" alt = "graduation day photo" height = 300px width = 400px>
-        <p>The photo on the left is a photo of me on my graduation day. This is one of the most important days
-          for me as I graduated highschool and can proudly say I did so with a GPA of 90. It was also the only
-          time I have seen my father cry so it a very special moment for me that I enjoy sharing.
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<!--Navigation Bar End-->
 
-          <img src = "medal.jpg" alt = "Magna cum laude medal" height = "300px" width = 400px>
-          <p>
-      </main>
+<!--Main Content-->
+<main>
+  <h1>About Me</h1>
+  <div class = "selfie">
+    <img src = "images/selfie.jpeg" alt = "Photo of me and my dog" height = "500px" width = "500px">
+  </div>
+  <figcaption>A cute picture taken with my dog Pico</figcaption>
+  <article class = "grid">
+          <section>
+              <h3>Who Am I, and What am I currently Doing?</h3>
+              <p>My name is Christian Reynolds and I am a college student pursuing a career in programming.
+              I began pursuing programming in highschool, and decided in my senior year that I wanted to pursue this
+              as a career. So far I have learned programming languages like Python, C++, Java, Visual Basic, and HTML/CSS.
+              I plan to lean other languages such as Swift, and JavaScript.</p>
+          </section>
 
-      <footer>
-      </footer>
-  </body>
+          <section>
+              <h3>What are my Biggest Achievements?</h3>
+              <p>Although this may not relate with my career of choice, I do have a few achievments that I am proud of.
+              The first is that I had the honor to participate in Sullivan County All County Music not just once, but twice.
+              The second is that I played TAPS in our local government center for a veteran service.
+          </section>
+
+          <aside>
+              <h2>It may not be perfect...</h2>
+              <p>But I plan to keep improving on my website design skills, as well as my programming skills.</p>
+          </aside>
+
+  </article>
+</main>
+
+</body>
+
+<footer>
+    <a href = "https://www.facebook.com/christian.reynolds.984/" class = "fa fa-facebook"</a>
+    <a href = "https://twitter.com/Chr1stianrr" class = "fa fa-twitter"</a>
+</footer>
 </html>
