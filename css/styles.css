@@ -16,6 +16,27 @@ body.about {
   clear: both;
   background: linear-gradient(to bottom, #fff, #0487D9, #0476D9, #0460D9);
 }
+
+body.career {
+  background: linear-gradient(to bottom, #fff, #0487D9, #0476D9, #0460D9);
+  min-height: 400px;
+  margin-bottom: 100px;
+  clear: both;
+}
+
+body.career q {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Koulen', cursive;
+}
+
+body.work {
+    background: linear-gradient(to bottom, #fff, #0487D9, #0476D9, #0460D9);
+}
+
+body.contact {
+      background: linear-gradient(to bottom, #fff, #0487D9, #0476D9, #0460D9);
+}
 /*Images*/
 .highschool {
   text-align: center;
@@ -37,8 +58,10 @@ body.about {
   width: 80%;
   margin-left: 10%;
   color:snow;
+}
 
-
+#work {
+  text-align: center;
 }
 /*Icons*/
 
@@ -145,8 +168,8 @@ h1 {
 
 
 section {
-  background-color: #183440
-  padding: 3%
+  background-color: #183440;
+  padding: 3%;
   color: #fff;
   margin-top: 4%;
 }
@@ -161,7 +184,7 @@ aside {
   padding: 2%;
   margin-top: 1%;
   color: #D9D9D9;
-  box-shadow: 4px, 4px, 10px, #183440;
+  box-shadow: 4px 4px 10px #183440;
 }
 /*Contact Info*/
 
@@ -193,7 +216,7 @@ aside {
   }
 }
 /*Mobile Viewport*/
-@media screen and (max-width: 321px;) {
+@media screen and (min-width: 321px), print {
   .grid {
     grid-template-columns: auto auto auto auto;
   }
@@ -203,8 +226,7 @@ aside {
   }
 
   body {
-    overflow-x: hidden;
-    max-width: 80%;
-    margin: 0;
+    width: auto;
+    height: 100%;
   }
 }
