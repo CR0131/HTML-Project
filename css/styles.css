@@ -1,6 +1,5 @@
 
-/*CSS Reset*/
-body{
+body.home{
   background-color: #1C8DDB;
    background-image: url('../images/alpaca.jpg');
    min-height:600px;
@@ -9,20 +8,25 @@ body{
    background-size: cover;
    position: relative;
    margin: 0;
-
   }
+
+body.about {
+  min-height: 400px;
+  margin-bottom: 100px;
+  clear: both;
+  background: linear-gradient(to bottom, #fff, #0487D9, #0476D9, #0460D9);
+}
 /*Images*/
 .highschool {
-  text-align: center;
-}
-.selfie {
   text-align: center;
 }
 
 .logo{
   font-family: "Anton", sans-serif;
 }
-
+.selfie {
+  text-align: center;
+}
 .saying {
   font-family: "Sofia", sans-serif;
   font-size: xx-large;
@@ -177,7 +181,7 @@ aside {
 }
 
 /*Desktop Viewport*/
-@media screen and (min-width: 1024px), print {
+@media screen and (min-width: 1281px), print {
   .grid {
     display: grid;
     grid-template-columns: auto auto;
@@ -189,12 +193,18 @@ aside {
   }
 }
 /*Mobile Viewport*/
-@media screen and (max-width: 650px;) {
+@media screen and (max-width: 321px;) {
   .grid {
     grid-template-columns: auto auto auto auto;
   }
 
   aside {
     grid-column: span 4;
+  }
+
+  body {
+    overflow-x: hidden;
+    max-width: 80%;
+    margin: 0;
   }
 }
